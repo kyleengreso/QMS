@@ -1,0 +1,47 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="{% static 'css/login.css' %}" />
+</head>
+<body>
+    {% if user.is_authenticated %}
+    <!-- If the user is logged in, show the logged-in state -->
+    <div class="logged-in">
+        <h2>Hello {{ user.username }}, You are already logged in</h2>
+        <h2>Go to <a class="nav-link" href="employee">Employee page</a></h2>
+        <ul>
+            <li><a class="nav-link" href="logout">Logout</a></li>
+        </ul>
+    </div>
+    {% else %}
+    <!-- If the user is not logged in, show the login form -->
+    <div class="login">
+        <div class="heading">
+            <h2>Employee Log In</h2>
+            {% for message in messages %}
+            <p class="error-message">{{ message }}</p>
+            {% endfor %}
+        </div>
+
+        <form method="POST" action="login">
+            {% csrf_token %}
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Username" name="username" required>
+            </div>
+
+            <div class="input-group">
+                <input type="password" class="form-control" placeholder="Password" name="password" required>
+            </div>
+
+            <button type="submit" class="float">Login</button>
+        </form>
+    </div>
+    {% endif %}
+</body>
+</html>

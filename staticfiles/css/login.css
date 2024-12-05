@@ -1,0 +1,116 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    padding: 20px;
+    height: 100vh;
+}
+
+h2 {
+    font-size: 24px;
+    color: #444;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+a.nav-link {
+    text-decoration: none;
+    color: #3498db;
+}
+
+a.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Already Logged In */
+.logged-in {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.logged-in h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.logged-in a.nav-link {
+    font-size: 18px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.logged-in li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+.logged-in li a {
+    font-size: 18px;
+    color: #3498db;
+}
+
+.logged-in li a:hover {
+    color: #1d5f8d;
+}
+
+/* Login Form */
+.login {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.heading h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.error-message {
+    color: #e74c3c;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-group input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.float {
+    width: 100%;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.float:hover {
+    background-color: #2980b9;
+}

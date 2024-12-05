@@ -1,0 +1,98 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #1a1a1a, #333333); 
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: #fff; /* Ensure text is visible on dark background */
+}
+
+/* Title / Heading styling */
+h1 {
+    font-size: 3.5em;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Container for buttons */
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Button styling */
+.btn-lg {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px; /* Space between buttons */
+}
+
+/* Register Button */
+.btn-register {
+    background-color: #4CAF50;
+    border: none;
+}
+
+.btn-register:hover {
+    background-color: #45a049;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Queue Button */
+.btn-queue {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-queue:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile responsive styling */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em; /* Adjust heading size for small screens */
+        margin-top: 20px; /* Add top margin for spacing */
+    }
+
+    .btn-lg {
+        padding: 12px 25px; /* Adjust button padding for smaller screens */
+        font-size: 1em; /* Adjust font size for smaller screens */
+    }
+
+    .container {
+        margin-top: 30px; /* Reduce space between buttons and heading */
+    }
+}
+
+/* Further styling for smaller screens (extra small devices) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em; /* Make the heading smaller on very small screens */
+        margin-top: 15px; /* Adjust margin for very small screens */
+    }
+
+    .btn-lg {
+        padding: 10px 20px; /* Smaller button padding for tight screens */
+        font-size: 0.9em; /* Smaller font size */
+    }
+
+    .container {
+        margin-top: 20px; /* Less space for extra small screens */
+    }
+}
